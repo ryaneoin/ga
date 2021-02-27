@@ -10,8 +10,8 @@ phases:
   install:
     commands:
       - apt-get update
-      - apt-get install python3.7 pip3
-      - pip3 install geneticalgorithm
+      - apt-get install python3.7
+      - python3.7 -m pip install geneticalgorithm
   pre_build:
     commands:
       - echo "Running pre_build"
