@@ -22,6 +22,11 @@ phases:
     commands:
       - echo "Building the application"
       - echo "test" > eoin/eoin.txt
+  post_build:
+    commands:
+      - echo "Running the GA"
+      - python3.8 ga-int.py
+
 
 artifacts:
   files:
