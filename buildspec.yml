@@ -12,7 +12,7 @@ phases:
       - echo "Installing software to Ubuntu"
       - apt-get update
       - apt-get -y install python3.7 python3-pip
-      - pip3 install geneticalgorithm
+      - pip3 install geneticalgorithm numpy==1.8.2
   pre_build:
     commands:
       - echo "Running pre_build"
