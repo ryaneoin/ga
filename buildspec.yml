@@ -17,6 +17,7 @@ phases:
     commands:
       - echo "Running pre_build"
       - mkdir eoin
+      - ls -lh
   build:
     commands:
       - echo "Building the application"
