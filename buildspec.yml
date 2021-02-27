@@ -13,7 +13,7 @@ phases:
       - apt install python3.7
 #    runtime-versions:
 #      python: 3.x
-  pre-build:
+  pre_build:
     commands:
       - mkdir eoin
       - echo "test" > eoin/eoin.txt
