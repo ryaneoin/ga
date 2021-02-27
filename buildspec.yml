@@ -2,8 +2,25 @@ version: 0.2
 
 run-as: ubuntu
 
+env:
+  variables:
+    build_version: "0.1"
+
 phases:
   install:
-    runtime-versions:
-      python: 3.x
-      
+    commands:
+      - apt update
+      - apt install python3.7
+#    runtime-versions:
+#      python: 3.x
+  pre-build:
+    commands:
+      - mkdir eoin
+      - echo "test" > eoin/eoin.txt
+  build:
+    commands:
+      - echo "Building the application"
+
+artifacts:
+  files:
+    - eoin/eoin.txt
