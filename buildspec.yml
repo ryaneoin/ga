@@ -1,6 +1,6 @@
 version: 0.2
 
-run-as: ubuntu
+run-as: root
 
 env:
   variables:
@@ -15,6 +15,7 @@ phases:
 #      python: 3.x
   pre_build:
     commands:
+      - echo "Running pre_build"
       - mkdir eoin
       - echo "test" > eoin/eoin.txt
   build:
