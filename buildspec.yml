@@ -9,6 +9,7 @@ env:
 phases:
   install:
     commands:
+      - echo "Installing software to Ubuntu"
       - apt-get update
       - apt-get -y install python3.7 python3-pip
       - pip3 install geneticalgorithm
@@ -16,10 +17,10 @@ phases:
     commands:
       - echo "Running pre_build"
       - mkdir eoin
-      - echo "test" > eoin/eoin.txt
   build:
     commands:
       - echo "Building the application"
+      - echo "test" > eoin/eoin.txt
 
 artifacts:
   files:
