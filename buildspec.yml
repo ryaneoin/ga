@@ -9,8 +9,8 @@ env:
 phases:
   install:
     commands:
-      - apt update
-      - apt install python3.7
+      - apt-get update
+      - apt-get install python3.7
 #    runtime-versions:
 #      python: 3.x
   pre_build:
